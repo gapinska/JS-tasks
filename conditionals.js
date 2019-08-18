@@ -26,3 +26,24 @@ if (developer === 'junior js dev'){
  } else{
     console.log("Hej młodziaku!")
  }
+
+ /* TODO.3: Napisz funkcję, która zwraca true jeśli:
+    - wartość zmiennej skill jest równa 'javaScript' lub 'HTML' lub 'CSS'
+ */
+
+ if(skill==='javaScript' || skill=== 'HTML' || skill===  'CSS'){
+     return true
+ }else{
+     return false
+ }
+
+ /* TODO.4: Napisz funkcję, która przyjmuje jako parametr stringa i zwraca true jeśli:
+ - wartość przyjętego parametru jest różna od słowa JavaScript
+ */
+function checkWord(word){
+    if(word !== 'JavaScript'){
+        return true
+    }else{
+        return false
+    }
+}
