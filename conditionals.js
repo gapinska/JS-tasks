@@ -47,3 +47,29 @@ function checkWord(word){
         return false
     }
 }
+
+/* TODO.5: Napisz funkcję isShopOpen, która przyjmuje jako parametr liczbę i zwraca true jeśli:
+ - wartość parametru jest mniejsza niż 23 i większa od 6
+ */
+
+ function isShopOpen(num){
+     if(num<23 && num>6){
+         return true
+     }else{
+         return false
+     }
+
+ }
+
+ /* TODO.6: Wykorzystując funkcję isShopOpen i negację (!), napisz funkcję isShopClosed
+    - która zwraca true, jeśli sklep jest zamknięty (czyli neguje wartość zwróconą z isShopOpen)
+ */
+
+function isShopClosed(){
+    if(isShopOpen!== true){
+        return true
+    }else{
+        return false
+    }
+
+}
