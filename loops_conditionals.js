@@ -24,3 +24,15 @@ function getNumber(list) {
 
 }
 
+// TODO: 3. stworz petle while, ktora wyswietli kazda
+// wartosc z tablicy z poprzedniego zadania
+// ale przerwij petle, kiedy wartosc jest > 1
+
+let i =0
+while (i<list.length){
+    if(list[i]>1){
+        break
+    }
+    console.log(list[i])
+    i++
+} 
