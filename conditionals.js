@@ -107,3 +107,9 @@ switch(day){
         console.log("The day like this does not exist!");
  }
 
+/* TODO.8: Wykorzystując TERNARY OPERATOR:
+    - przypisz do zmiennej price wartość: '2.00$' jeśli isMember = true a jeśli nie to '10.00$';
+        czy
+  */
+ let price
+  (isMember===true)? price= '2.00$': price= '10.00$'
