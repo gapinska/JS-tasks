@@ -73,3 +73,37 @@ function isShopClosed(){
     }
 
 }
+
+/* TODO.7: Wykorzystując SWITCH, napisz funkcję, która jako parametr przyjmuje stringa o nazwie day i:
+ - która wyrzuca w konsoli wymyślony tekst, w zależności czy "case" jest spełniony
+ - case mają odpowiadać kolejnym dniom: "Monday", "Tuesday", "Wednesday" etc...
+ - ma być 7 warunków (7 dni)
+ - w przypadku jeśli case nie pasuje do żadnego przypadku, to funkcja ma wyświetlić w konsoli tekst: "Taki dzień nie istnieje!";
+ */
+
+switch(day){
+    case "Monday":
+         console.log("Monday");
+         break;
+    case "Tuesday":
+        console.log("Tuesday");
+        break;
+    case "Wednesday":
+        console.log("Wednesday");
+        break;
+    case "Thursday":
+        console.log("Thursday");
+        break;
+    case "Friday":
+        console.log("Friday");
+        break;
+    case "Saturday":
+        console.log("Saturday");
+        break;
+    case "Sunday":
+        console.log("Sunday");
+        break;
+    default:
+        console.log("The day like this does not exist!");
+ }
+
