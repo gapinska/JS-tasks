@@ -11,3 +11,16 @@ if(number===1 || number===2){
     console.log(number)
 }else {console.log(0)}
 
+
+// TODO: 2. stwórz liste 10 losowych liczb
+
+let list = []
+
+function getNumber(list) {
+    for(let i =0; i<10; i++){
+        list.push(Math.floor(Math.random()*10+1))
+    }
+    return list
+
+}
+
