@@ -36,3 +36,20 @@ while (i<list.length){
     console.log(list[i])
     i++
 } 
+
+
+// TODO: 4. stwórz liste 100 losowych liczb (programistycznie)
+// poza petla zrob console log calej tablicy
+
+let list = []
+
+for (i=0; i<100; i++){
+    list.push((Math.floor(Math.random()*10+1)))
+}
+console.log(list)
+
+
+
+
+
+
