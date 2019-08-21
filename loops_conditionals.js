@@ -49,6 +49,22 @@ for (i=0; i<100; i++){
 console.log(list)
 
 
+// TODO: 5. Stworz tablice z 5 liczbami (od 1 do 5)
+// dodaj 0 jako pierwszy element tablicy
+// dodaj 6 jako ostatni element tablicy
+// wyswietl tablice w konsoli
+// wykonaj operacje odwrotne do ostatnich operacjach na tablicy
+// wyswietl tablice w konsoli
+
+
+let arr = [1,2,3,4,5]
+
+arr.unshift(0)
+arr.push(6)
+console.log(arr)
+arr.shift()
+arr.pop()
+console.log(arr)
 
 
 
