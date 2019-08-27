@@ -34,6 +34,11 @@ var drinks = [
 /* TODO.3: Za pomocą pętli, wyświetl w konsoli nazwy drinków, których:
  - nazwa ma więcej niż 4 litery */
 
+ drinks.forEach(drink=>{
+     if(drink.name.length>4)
+     console.log(drink.name)
+ })
+
 /* TODO.4: Za pomocą pętli, wyświetl w konsoli nazwy drinków, których:
  - nazwa zaczyna się na literkę "B" lub na literkę "V" */
 
