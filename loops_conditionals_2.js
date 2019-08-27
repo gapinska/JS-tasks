@@ -24,6 +24,13 @@ var drinks = [
 /* TODO.2: Za pomocą pętli, wyświetl w konsoli nazwy drinków, których:
  - cena jest wyższa niż 20 ale jednocześnie niższa lub równa 40 */
 
+ drinks.forEach(drink=>{
+     if(drink.price>20 && drink.price<=40){
+         console.log(drink.name, drink.price)
+     }
+
+ })
+
 /* TODO.3: Za pomocą pętli, wyświetl w konsoli nazwy drinków, których:
  - nazwa ma więcej niż 4 litery */
 
