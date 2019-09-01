@@ -35,10 +35,19 @@ var users = [
     {login: 'Johhny', password: 'lubie_placki'},
 ];
 
+users.push({login: 'Johny', password: 'h4xd'})
+users.push({login: 'Megan', password: 'ghgh'})
+
 // TODO 4.a) Wyświetl w konsoli login i password usera na indeksie "2" w tablicy users
+
+console.log(users[2])
 
 /* TODO 4.b) Napisz funkcję, która jako prametr przyjmuje obiekt user i zwraca stringa:
  - "USER CREDENTIALS ARE: LOGIN_USERA : PASSWORD_USERA" */
+
+ users.forEach(user=> console.log(`USER CREDENTIALS ARE: ${user.login}, ${user.password}`)) 
+
+ 
 
 // TODO: 5. Wyśwetl w konsoli tablicę z frameworkami developera
 var developer = {
