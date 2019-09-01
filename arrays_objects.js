@@ -61,6 +61,8 @@ var developer = {
     }
 };
 
+console.log(developer.otherInfo.skills.frameworks)
+
 // TODO: 6. Wyśwetl w konsoli tablicę z frameworkami drugiego developera
 var developers = [
     {
