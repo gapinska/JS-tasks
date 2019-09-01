@@ -85,6 +85,8 @@ var developers = [
     }
 ];
 
+
+developers[1].otherInfo.skills.frameworks
 // TODO: 7. Wyświetl w konsoli kolejno wszystkie firmy w jakich pracował drugi pracownik tablicy workers
 var workers = [
     {
