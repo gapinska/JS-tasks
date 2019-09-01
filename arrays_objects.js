@@ -16,6 +16,7 @@ skills[skills.length] = "Python"
 skills.push("Java")
 
 // TODO: 2. Wyświetl w konsoli liczbę elementów w powyższej tablicy skills
+console.log(skills.length)
 
 
 // TODO: 3. Wyświetl w konsoli wartości pól name / year / isDamaged z obiektu car
@@ -24,6 +25,9 @@ var car = {
     year: 1998,
     isDamaged: true
 };
+
+Object.keys(car).forEach(key => console.log(car[key])
+
 
 // TODO: 4. Do tablicy users, dopisz dwóch dodatkowych userów
 var users = [
