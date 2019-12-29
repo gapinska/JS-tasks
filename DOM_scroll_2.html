@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 10000vh;
+        }
+
+        div {
+            position: fixed;
+        }
+    
+    </style>
+</head>
+<body>
+    <script>
+        let colorRed = 'red'
+        let colorGreen = 'green'
+        const bar = document.createElement('div')
+        document.body.appendChild(bar)
+        bar.style.width = 100+'vw'
+        let barHeight = 10
+        let grow = true;
+        bar.style.height = barHeight+'px'
+        bar.style.backgroundColor = colorRed;
+        window.addEventListener('scroll', ()=>{
+            if(barHeight==200){
+                grow= false
+            } else if (barHeight==1){
+                grow= true
+            }
+            if (grow){
+                barHeight++;
+            bar.style.height= barHeight+'px'
+            bar.style.backgroundColor = colorRed;
+            }else {
+                barHeight--
+                bar.style.height= barHeight+'px'
+                bar.style.backgroundColor = colorGreen;
+            }
+            
+        })
+
+    </script>
+    
+</body>
+</html>
