@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
       li {
-        display: none;
+        display: none; 
       }
     </style>
   </head>
@@ -27,16 +27,16 @@
     </ul>
 
     <script>
-      const btn = document.querySelector("button");
-      let fontSizeNum = 10;
+      const btn = document.querySelector("button") 
+      let fontSizeNum = 10 
       showList = () => {
-        const liList = document.querySelectorAll("li");
-        liList.forEach(li => (li.style.display = "block"));
+        const liList = document.querySelectorAll("li") 
+        liList.forEach(li => (li.style.display = "block")) 
 
-        liList.forEach(li => (li.style.fontSize = fontSizeNum + "px"));
-        fontSizeNum++;
-      };
-      btn.addEventListener("click", showList);
+        liList.forEach(li => (li.style.fontSize = fontSizeNum + "px")) 
+        fontSizeNum++ 
+      } 
+      btn.addEventListener("click", showList) 
     </script>
   </body>
 </html>
