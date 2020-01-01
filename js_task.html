@@ -31,8 +31,10 @@
       let fontSizeNum = 10 
       showList = () => {
         const liList = document.querySelectorAll("li") 
-        liList.forEach(li => (li.style.display = "block")) 
-
+        liList.forEach(li => {
+            if (li.style.display===""){
+                li.style.display = "block"} 
+            })
         liList.forEach(li => (li.style.fontSize = fontSizeNum + "px")) 
         fontSizeNum++ 
       } 
