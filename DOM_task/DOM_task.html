@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .picture {
+        margin-bottom: 20px;
+      }
+
+      .picture img {
+        width: 850px;
+      }
+
+      .picture-1,
+      .picture-3,
+      .picture-5 {
+        margin-right: 20px;
+      }
+
+      .packshotActive {
+        opacity: 0.3;
+      }
+
+      footer {
+        width: 100vw;
+        height: 600px;
+        background-color: #e3e5e9;
+      }
+
+      footer > div {
+        margin: 50px 100px auto 100px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+      }
+
+      footer > div.text {
+        font-weight: initial;
+      }
+
+      footer > button {
+        margin: 30px 100px auto 100px;
+        height: 60px;
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="picture picture-1">
+        <img class="pictureSrc" src="img/1.jpg" />
+      </div>
+      <div class="picture picture-2">
+        <img class="pictureSrc" src="img/2.jpg" />
+      </div>
+      <div class="picture picture-3">
+        <img class="pictureSrc" src="img/3.jpg" />
+      </div>
+      <div class="picture picture-4">
+        <img class="pictureSrc" src="img/4.jpg" />
+      </div>
+      <div class="picture picture-5">
+        <img class="pictureSrc" src="img/5.jpg" />
+      </div>
+      <div class="picture picture-6">
+        <img class="pictureSrc" src="img/6.jpg" />
+      </div>
+      <footer>
+        <div>Potrzebujesz pomocy?</div>
+        <button>ROZPOCZNIJ CHAT</button>
+        <div class="text">
+          Jeśli wolisz, zadzwoń do nas pod numer 00 800 341 12 05
+        </div>
+        <div class="text">Od Poniedziałku do Piątku od 9:00 do 18:00</div>
+      </footer>
+    </div>
+
+    <script>
+      let editorialPictures = document.querySelectorAll(".pictureSrc");
+      arrayOfImg = [...editorialPictures];
+      for (let i = 0; i <= arrayOfImg.length; i++) {
+        arrayOfImg[i].addEventListener("mouseover", function() {
+          arrayOfImg[i].classList.add("packshotActive")
+        });
+        arrayOfImg[i].addEventListener("mouseout", function() {
+          arrayOfImg[i].classList.remove("packshotActive")
+        })
+      }
+    </script>
+  </body>
+</html>
