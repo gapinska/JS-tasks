@@ -54,6 +54,31 @@
         color: white;
         padding: 20px;
       }
+
+      .btn-show-products {
+        position: fixed;
+        top: 92%;
+        right: 47px;
+        margin: auto;
+        width: auto;
+        left: auto;
+        display: block;
+        padding: 1% 1.7% 0.9%;
+        font-size: 16px;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: #fff;
+        background-color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 700;
+        transition: all 0.3s ease;
+      }
+
+      .btn-show-products.hidden {
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -84,19 +109,36 @@
         </div>
         <div class="text">Od Poniedziałku do Piątku od 9:00 do 18:00</div>
       </footer>
+      <button class="btn-show-products">Zobacz wszystkie produkty</button>
     </div>
 
-    <script>
+    <script>      
       let editorialPictures = document.querySelectorAll(".pictureSrc");
       arrayOfImg = [...editorialPictures];
       for (let i = 0; i <= arrayOfImg.length; i++) {
         arrayOfImg[i].addEventListener("mouseover", function() {
-          arrayOfImg[i].classList.add("packshotActive")
+          arrayOfImg[i].classList.add("packshotActive");
         });
         arrayOfImg[i].addEventListener("mouseout", function() {
-          arrayOfImg[i].classList.remove("packshotActive")
-        })
+          arrayOfImg[i].classList.remove("packshotActive");
+        });
       }
+
+      const minWidth = window.matchMedia("(min-width: 768px)");
+        const btnPosition = 100;
+
+        function hideButton() {
+            const btnShowProducts = document.querySelector('.btn-show-products')
+            if (window.pageYOffset > btnPosition) {
+                btnShowProducts.classList.add('hidden')
+            } else {
+                btnShowProducts.classList.remove('hidden')
+            }
+        }
+
+        if (minWidth.matches) {
+            document.addEventListener('scroll', hideButton)
+        }
     </script>
   </body>
 </html>
