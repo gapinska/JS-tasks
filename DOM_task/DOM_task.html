@@ -14,10 +14,27 @@
 
       .picture {
         margin-bottom: 20px;
+        position: relative;
       }
+
+      
+
+      
 
       .picture img {
         width: 850px;
+      }
+
+      div.packshotImg {
+        position: absolute;
+        z-index: 1;
+        bottom: 10px;
+        margin: auto 10px;
+      }
+
+
+      .packshotImg img {
+        width: 200px;
       }
 
       .picture-1,
@@ -85,6 +102,28 @@
     <div class="content">
       <div class="picture picture-1">
         <img class="pictureSrc" src="img/1.jpg" />
+      <div class="packshotImg">
+        <div>
+          <img class="packshot-1" src="img/7.jpg"/>
+        <p>Pasek z ozdobną sprzączką <span class="price">39.90PLN</span></p>
+        </div>
+        <div>
+          <img class="packshot-2" src="img/8.jpg" />
+        <p>Elastyczne botki <span class="price">39.90PLN</span</p>
+        </div>
+        <div>
+          <img class="packshot-2" src="img/9.jpg" />
+        <p>Komplet kolczyków <span class="price">24.90PLN</span></p>
+
+        </div>
+        <div>
+          <img class="packshot-2" src="img/10.jpg" />
+        <p>Spodnie haremki <span class="price">89.90PLN</span></p>   
+
+        </div>        
+        
+           
+      </div>
       </div>
       <div class="picture picture-2">
         <img class="pictureSrc" src="img/2.jpg" />
